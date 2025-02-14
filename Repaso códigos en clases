@@ -1,0 +1,37 @@
+##Mostrar numeros.
+
+Inicio
+    Escribir "¿Cuantos números quieres mostrar?: "
+    Leer n
+
+    a := 0
+    b := 1
+
+    Para i Hasta n Hacer
+        Escribir **a**
+        temp := a + b
+        a := b
+        b := temp
+    FinPara
+Fin
+
+
+
+Inicio
+    Escribir "Ingrese el primer número: "
+    Leer numero1
+    Escribir "Ingrese el segundo número: "
+    Leer numero2
+    Escribir "Ingrese el tercer número: "
+    Leer numero3
+
+    Si (numero1 > numero2) y (numero1 > numero3) Entonces
+        numero_mayor := numero1
+    Si (numero2 > numero3) Entonces
+        numero_mayor := numero2
+    Sino
+        numero_mayor := numero3
+    FinSi
+
+    Escribir "El número mayor es: ", numero_mayor
+Fin
